@@ -1,7 +1,7 @@
 #Get Environment list
 - name: Get environment list
   uri:
-    url: "{{ sat_url }}/environments?organization_id={{ sat_org_id }}"
+    url: "{{ sat_url }}/organizations/{{ sat_org_id }}/environments"
     method: GET
     user: "{{ sat_user }}"
     password: "{{ sat_password }}"
@@ -37,7 +37,7 @@
 
 - name: Get content view version content
   uri:
-    url: "{{ sat_url }}/{{ sat_api_path_content_view_versions }}/{{ sat_cv_version_last.id }}"
+    url: "{{ sat_url }}/content_view_versions/{{ sat_cv_version_last.id }}"
     method: GET
     user: "{{ sat_user }}"
     password: "{{ sat_password }}"

@@ -1,13 +1,8 @@
 [ ![Image](https://cloud.githubusercontent.com/assets/5514990/24834935/e0d1db04-1d1c-11e7-8ad0-53fd45ff13c3.png "Ansible") ](https://www.ansible.com/ "Ansible")
 
-[![Build Status](https://travis-ci.org/ogerbron/satellite6-content_views.svg?branch=master)](https://travis-ci.org/ogerbron/satellite6-content_views/)
-[![Ansible Role](https://img.shields.io/ansible/role/21653.svg)](https://galaxy.ansible.com/ogerbron/satellite6-content_views/)
-
-**Important**: As I moved to another job, I do not use Red Hat Satellite any more, thus I cannot maintain this role easily (I don't have a licence to use Satellite). But feel free to submit PR to improve the role, or use your own repo. Hope you will enjoy it!
-
 # Content View Management
 
-Satellite6-content_views is an Ansible role to easily manage content views in RedHat Satellite 6.x such as:
+Satellite6-content_views is an Ansible role to easily manage content views in RedHat Satellite 6.8 such as:
 
 * Publishing a new content view version
 * Promoting a version to an environment
@@ -20,7 +15,7 @@ This role only uses the RedHat Satellite HTTP API.
 In order to use this role, you will need:
 
 * Ansible > 2.0
-* Satellite 6.x 
+* Satellite >= 6.8
 * HTTPS access authorization from your Ansible machine to your Satellite
 * A Satellite user having the admin role
 
